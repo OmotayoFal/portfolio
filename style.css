@@ -1,0 +1,69 @@
+/* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Reenie Beanie", cursive;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  transition: background 0.3s ease;
+}
+
+.menu-item:hover {
+  background: white;
+  color: #000;
+}
+/* Section Card Styling */
+.section-card {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px;
+  padding: 20px;
+  background-color: #f9f6f1;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d4c1a3; /* Border to give a scrapbook effect */
+ 
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Adds subtle paper texture */
+  background-blend-mode: multiply;
+}
+.section-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}

@@ -1,0 +1,169 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Reenie Beanie", cursive;
+}
+/* Styling for the projects page */
+.projects-background {
+    position: relative; /* Change from fixed to relative */
+    width: 100%;
+    min-height: 100vh; /* Use min-height instead of height */
+    background-image: url('images/3.png'); /* Use your own background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top but allow space for the menu */
+    padding-top: 70px; /* Create space for the menu */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+
+.projects-menu {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 1; /* Make sure the menu stays on top */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.menu-item:hover {
+    background: white;
+    color: #000;
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: rgb(245, 240, 230);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    flex: 0 0 30%; /* Flex item takes up 30% of the container */
+}
+
+.project-card-img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-card-body {
+    padding: 15px;
+}
+
+.project-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-card-text {
+    font-size: 1rem;
+}
+
+.more-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.more-info {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.x-btn {
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.x-btn:hover {
+    background-color: darkgray;
+}
+
+/* Bootstrap Grid Adjustment (responsive) */
+.container {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next row on small screens */
+}
+
+.project-card {
+    flex: 1 1 calc(33.33% - 30px); /* 3 cards per row with space */
+    margin: 15px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 992px) {
+    .project-card {
+        flex: 1 1 calc(50% - 30px); /* 2 cards per row on medium screens (tablets) */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(100% - 30px); /* 1 card per row on smaller screens (mobile phones) */
+    }
+    
+    .projects-menu {
+        flex-direction: column;
+        position: static;
+        background: rgba(255, 255, 255, 0.7); /* Increase visibility */
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .menu-item {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust font size and padding for very small screens */
+    .projects-menu {
+        padding: 10px 15px;
+    }
+    .menu-item {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .project-card-body {
+        padding: 12px;
+    }
+
+    .project-card-title {
+        font-size: 1.1rem;
+    }
+
+    .project-card-text {
+        font-size: 0.9rem;
+    }
+}

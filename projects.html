@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+  <div class="projects-background">
+    <!-- Navigation Menu -->
+    <nav class="projects-menu">
+      <a href="home.html" class="menu-item">About Me</a>
+      <a href="projects.html" class="menu-item">Projects</a>
+      <a href="experience.html" class="menu-item">Experience</a>
+    </nav>
+
+    <!-- Container for Cards -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="project-card">
+           
+            <div class="project-card-body">
+              <h5 class="project-card-title">Movie Recommender System</h5>
+              <p class="project-card-text">A movie recommender system built for Year 12 coursework is a project that uses data-driven techniques to suggest movies to users based on their preferences or viewing history. </p>
+              <button class="more-btn" onclick="toggleMoreInfo(0)">More</button>
+              <div class="more-info" id="more-info-0">
+                <p><b>Technologies:</b> Python, PHP, Kaggle, REST API, XAMPP, Pandas </p>
+
+                <p>   I developed a sophisticated Movie Recommendation System that leverages both content-based and collaborative filtering techniques to provide personalized movie suggestions. Using Python and Pandas for data handling, I integrated Kaggle for database management and a REST API for efficient data retrieval.</p>
+                  
+                  <h5><b>Key features of this system include:</b></h5>
+                  
+                 <b> Advanced Recommendation Algorithms: </b>Tailored movie recommendations based on user preferences and viewing history to enhance engagement.
+                 <p><b> Secure Login and Search Functionality: </b>Implemented secure login using XAMPP and added robust search capabilities based on genre, actor, and user ratings to improve content discovery and user experience.</p>
+                </p>
+                <button class="x-btn" onclick="toggleMoreInfo(0)">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-card-body">
+              <h5 class="project-card-title">Arduino Parking System</h5>
+              <p class="project-card-text">An innovative system built using Arduino and C++ to detect and manage parking spaces efficiently.</p>
+              <button class="more-btn" onclick="toggleMoreInfo(1)">More</button>
+              <div class="more-info" id="more-info-1">
+                <p><b>Technologies:</b> Arduino, C++</p>
+                <p>Designed and implemented a sophisticated parking system with custom algorithms for accurate parking space detection and management, improving efficiency and resource use.</p>
+                <h5><b>Key features of this system include:</b></h5>
+                <p><b>Microcontroller Programming:</b> Proficiency in hardware interfacing with custom code for real-time monitoring.</p>
+                <p><b>Optimized Resource Management:</b> Efficiently utilized sensors and custom logic for effective space utilization.</p>
+                <button class="x-btn" onclick="toggleMoreInfo(1)">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card for TeenSquared -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-card-body">
+              <h5 class="project-card-title">TeenSquared Blog Platform</h5>
+              <p class="project-card-text">A dynamic blog platform created using WordPress to engage with a youth audience and enhance brand visibility.</p>
+              <button class="more-btn" onclick="toggleMoreInfo(2)">More</button>
+              <div class="more-info" id="more-info-2">
+                <p><b>Technologies:</b> WordPress, Canva, HTML, CSS, JavaScript</p>
+                <p>Developed and launched a blog with custom designs and functionality, leveraging HTML, CSS, and JavaScript to optimize the user experience.</p>
+                <h5><b>Key features of this system include:</b></h5>
+                <p><b>Custom Design:</b> Enhanced branding through Canva-designed visuals and custom HTML/CSS elements.</p>
+                <p><b>User Engagement:</b> Interactive elements and responsive design for an optimized user experience.</p>
+                <button class="x-btn" onclick="toggleMoreInfo(2)">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card for Productive AI Chatbot -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-card-body">
+              <h5 class="project-card-title">Productive AI Chatbot</h5>
+              <p class="project-card-text">An AI chatbot designed to help users optimize productivity by suggesting activities within specific timeframes.</p>
+              <button class="more-btn" onclick="toggleMoreInfo(3)">More</button>
+              <div class="more-info" id="more-info-3">
+                <p><b>Technologies:</b> Jupyter Notebooks, Python</p>
+                <p>Currently developing a productivity chatbot with activity suggestions based on available time slots, enhancing productivity and time management.</p>
+                <h5><b>Key features of this system include:</b></h5>
+                <p><b>Intelligent Activity Suggestions:</b> Real-time recommendations based on user input and schedule.</p>
+                <p><b>Data Analysis:</b> Utilizes Python for back-end processing and effective data handling.</p>
+                <button class="x-btn" onclick="toggleMoreInfo(3)">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card for Wedding Venue Comparison Website -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-card-body">
+              <h5 class="project-card-title">Wedding Venue Comparison Website</h5>
+              <p class="project-card-text">A website built to help users compare wedding venues with visually appealing data representation.</p>
+              <button class="more-btn" onclick="toggleMoreInfo(4)">More</button>
+              <div class="more-info" id="more-info-4">
+                <p><b>Technologies:</b> HTML, CSS, JavaScript, PHP, MySQL</p>
+                <p>Developed as a coursework project, this website displays wedding venue data in an accessible and visually appealing way to assist users in making informed choices.</p>
+                <h5><b>Key features of this system include:</b></h5>
+                <p><b>Data-Driven Display:</b> Dynamically retrieves and presents venue data from a database for easy comparison.</p>
+                <p><b>Responsive Design:</b> Ensures accessibility across various devices and screen sizes.</p>
+                <button class="x-btn" onclick="toggleMoreInfo(4)">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card for Connect Four Game -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-card-body">
+              <h5 class="project-card-title">Connect Four Game</h5>
+              <p class="project-card-text">An interactive Connect Four game developed in Python, playable against the system or with another player.</p>
+              <button class="more-btn" onclick="toggleMoreInfo(5)">More</button>
+              <div class="more-info" id="more-info-5">
+                <p><b>Technologies:</b> Python, Pygame</p>
+                <p>Created a two-player Connect Four game with options for solo play against an AI opponent or multiplayer mode.</p>
+                <h5><b>Key features of this game include:</b></h5>
+                <p><b>Interactive Gameplay:</b> Real-time gameplay with Python's Pygame library for graphics and controls.</p>
+                <p><b>AI Integration:</b> Offers a solo mode where users can challenge an AI opponent.</p>
+                <button class="x-btn" onclick="toggleMoreInfo(5)">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <script>
+    function toggleMoreInfo(cardIndex) {
+      const moreInfo = document.getElementById('more-info-' + cardIndex);
+      if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+        moreInfo.style.display = "block";
+      } else {
+        moreInfo.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- Bootstrap and jQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
